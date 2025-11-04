@@ -1,0 +1,95 @@
+/* 全域重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background: #fafafa;
+}
+
+/* 導覽列樣式 */
+.navbar {
+    background: #2c3e50;
+    color: white;
+}
+
+.navbar-toggle {
+    display: none;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+    border-radius: 2px;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: block;
+}
+
+.navbar-links a:hover {
+    background: #34495e;
+}
+
+/* 響應式：手機端顯示漢堡選單 */
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-links {
+        flex-direction: column;
+        display: none;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/* 內容容器樣式 */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.container h3 {
+    margin: 15px 0;
+    color: #34495e;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: #34495e;
+}
