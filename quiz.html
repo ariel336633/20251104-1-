@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Code 線上測驗</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .quiz-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fff;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .options {
+            margin: 10px 0;
+        }
+        .option {
+            display: block;
+            padding: 10px;
+            margin: 5px 0;
+            background: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .option:hover {
+            background: #e1e1e1;
+        }
+        #next-btn, #restart-btn {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #next-btn:hover, #restart-btn:hover {
+            background: #0056b3;
+        }
+        #result {
+            display: none;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-toggle" id="navbarToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="index.html">首頁</a>
+            <a href="assignment1.html">每週作業</a>
+            <a href="notes.html">課堂筆記</a>
+            <a href="quiz.html">VS Code 線上測驗</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="quiz-container">
+            <h1>VS Code 操作測驗</h1>
+            <div id="quiz">
+                <!-- 直接顯示題目，移除loading -->
+                <div class="question">
+                    <h2>問題 1: 如何在 VS Code 中開啟命令選擇區?</h2>
+                    <div class="options">
+                        <button class="option">A) Ctrl + Shift + P</button>
+                        <button class="option">B) Ctrl + P</button>
+                        <button class="option">C) Ctrl + Shift + N</button>
+                        <button class="option">D) Alt + F4</button>
+                    </div>
+                </div>
+                <button id="next-btn" class="btn">下一題</button>
+            </div>
+            <div id="result" class="hide">
+                <h2>測驗結果</h2>
+                <p>你的得分: <span id="score">0</span> / <span id="total">0</span></p>
+                <button id="restart-btn" class="btn">重新開始</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/menu.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>

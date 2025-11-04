@@ -1,0 +1,6 @@
+question,optionA,optionB,optionC,correctAnswer
+"在VS Code中，哪個快捷鍵可以快速打開命令面板？","Ctrl+P","Ctrl+Shift+P","Alt+P",B
+"要在VS Code中即時預覽HTML頁面，推薦安裝哪個擴充套件？","Prettier","ESLint","Live Server",C
+"VS Code中，哪個按鈕用於安裝擴充套件？","左側「文件夾」圖示","左側「方塊」圖示","左側「齒輪」圖示",B
+"在VS Code中，要註解單行程式碼，使用哪個快捷鍵？","Ctrl+/","Ctrl+Shift+/","Alt+/",A
+"VS Code的「多游標」功能，可透過哪個操作開啟？","雙擊滑鼠左鍵","按住Ctrl並點擊滑鼠","按住Shift並點擊滑鼠",
